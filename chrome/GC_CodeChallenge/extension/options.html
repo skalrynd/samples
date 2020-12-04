@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style>
+          #APICredsForm label {
+              width: 200px;
+              float: left;
+          }
+          #optionsMessage {
+              padding-bottom: 5px;
+          }
+          #optionsMessage.error {
+              color: #FF0000;
+              padding-bottom: 5px;
+          }
+          #optionsMessage.success {
+              color: #008800;
+          }
+      </style>
+    </head>
+    <body>
+        <div>
+            <p>Enter your GoCollect API credentials</p>
+        </div>
+        <div id="optionsMessage"></div>
+        <div>
+            <form id="APICredsForm">
+                <div><label for="user">Username:</label> <input name="user" /></div>
+                <div><label for="APIKey">API Key:</label> <input name="APIKey" /></div>
+                <button type="button" id="saveCredsButton">Save</button>
+            </form>
+        </div>
+    </body>
+    <script src="options.js"></script>
+  </html>
